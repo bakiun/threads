@@ -141,3 +141,10 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Custom
+.claude/
+.agents/
+prompt.md
+CLAUDE.md
+RETRO.md
