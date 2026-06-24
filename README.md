@@ -10,7 +10,6 @@ A lightweight, powerful, and secure browser-based utility to identify and manage
 - **Bilingual Support**: Fully supports English and Turkish translations.
 - **Safety-First Rate Limiting**: Built-in configurable delays and scheduled long pauses (cooldowns) to mimic human behavior and protect your account from rate-limiting/throttling.
 - **Advanced Search & Filtering**: Easy search by username or display name. Filter list by verified profiles, private accounts, or hidden users.
-- **Bulk Action Support**: Select individual users or bulk-select all to unfollow them automatically with safe, staggered delays.
 - **Secure & Private**: Runs entirely client-side. No credentials, tokens, or external servers are involved. It leverages your existing browser session.
 
 ---
