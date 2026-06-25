@@ -1,10 +1,10 @@
 (() => {
   'use strict';
 
-  const allowedHosts = ['www.threads.net', 'threads.net', 'www.threads.com', 'threads.com'];
+  const allowedHosts = ['www.threads.com', 'threads.com'];
   if (!allowedHosts.includes(location.hostname)) {
-    console.error('Please run this script on threads.net or threads.com!');
-    alert('Open https://www.threads.net first, then paste this script again.');
+    console.error('Please run this script on threads.com!');
+    alert('Open https://www.threads.com first, then paste this script again.');
     return;
   }
 
@@ -566,13 +566,13 @@
         <img class="iu-avatar" src="${escapeAttr(user.profile_pic_url || '')}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">
         <div class="iu-row-text">
           <div class="iu-row-name">
-            <a href="https://www.threads.net/@${encodeURIComponent(user.username)}" target="_blank" rel="noopener noreferrer" data-stop>@${escapeHTML(user.username)}</a>
+            <a href="https://www.threads.com/@${encodeURIComponent(user.username)}" target="_blank" rel="noopener noreferrer" data-stop>@${escapeHTML(user.username)}</a>
             ${tags.join(' ')}
           </div>
           <div class="iu-row-sub">${escapeHTML(user.full_name || '')}</div>
         </div>
         <div class="iu-row-actions">
-          <a class="iu-icon-btn" href="https://www.threads.net/@${encodeURIComponent(user.username)}" target="_blank" rel="noopener noreferrer" data-stop title="${escapeAttr(t('openProfile'))}" aria-label="${escapeAttr(t('openProfile'))}">${SVG.open}</a>
+          <a class="iu-icon-btn" href="https://www.threads.com/@${encodeURIComponent(user.username)}" target="_blank" rel="noopener noreferrer" data-stop title="${escapeAttr(t('openProfile'))}" aria-label="${escapeAttr(t('openProfile'))}">${SVG.open}</a>
           <button type="button" class="iu-icon-btn iu-text-btn" data-hide="${escapeAttr(user.id)}" data-stop title="${escapeAttr(hidden ? t('unhideTooltip') : t('hideTooltip'))}">${escapeHTML(hidden ? t('unhide') : t('hide'))}</button>
         </div>
       </div>
