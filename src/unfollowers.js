@@ -1320,9 +1320,12 @@
       toast('Cannot modify settings while a process is running.');
       return;
     }
+    if (state.mode === 'settings') {
+      return;
+    }
     state.prevMode = state.mode;
     state.mode = 'settings';
-    renderBody();
+    renderShell();
   }
 
   function applyPanelPosition() {
