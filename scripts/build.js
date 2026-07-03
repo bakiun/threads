@@ -98,12 +98,20 @@ while (i < code.length) {
       state = 'NORMAL';
     }
   } else if (state === 'STRING_TEMPLATE') {
-    output.push(c);
     if (c === '\\') {
+      output.push(c);
       output.push(next);
       i++;
     } else if (c === '`') {
+      output.push(c);
       state = 'NORMAL';
+    } else if (/\s/.test(c)) {
+      const prevChar = output[output.length - 1];
+      if (prevChar !== ' ' && prevChar !== '`') {
+        output.push(' ');
+      }
+    } else {
+      output.push(c);
     }
   } else if (state === 'REGEX') {
     output.push(c);

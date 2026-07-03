@@ -12,35 +12,13 @@
   const STYLE_ID = 'tu-style';
   const STORAGE_KEY = 'tu_state_v1';
 
-  const BUG_REPORT_URL = `https://github.com/bakiun/threads-unfollowers/issues/new?title=${encodeURIComponent('[Bug]: ')}&body=${encodeURIComponent(`### Describe the Bug
-A clear and concise description of what the bug is.
+  const BUG_BODY = '### Describe the Bug\nA clear and concise description of what the bug is.\n\n### Steps to Reproduce\n1. Go to Threads.com\n2. Run the script in the console\n3. [Describe actions taken]\n4. [Describe the error/behavior]\n\n### Expected Behavior\n[What you expected to happen]\n\n### Environment Details\n- Browser:\n- OS:';
 
-### Steps to Reproduce
-1. Go to Threads.com
-2. Run the script in the console
-3. [Describe actions taken]
-4. [Describe the error/behavior]
+  const FEATURE_BODY = '### Is your feature request related to a problem?\nA clear and concise description of what the problem is.\n\n### Describe the Solution\nA clear and concise description of what you want to happen.\n\n### Describe Alternatives\nA clear and concise description of any alternative solutions or features you\'ve considered.\n\n### Additional Context\nAdd any other context or screenshots about the feature request here.';
 
-### Expected Behavior
-[What you expected to happen]
+  const BUG_REPORT_URL = 'https://github.com/bakiun/threads-unfollowers/issues/new?title=' + encodeURIComponent('[Bug]: ') + '&body=' + encodeURIComponent(BUG_BODY) + '&labels=bug';
 
-### Environment Details
-- Browser:
-- OS:
-`)}&labels=bug`;
-
-  const FEATURE_REQUEST_URL = `https://github.com/bakiun/threads-unfollowers/issues/new?title=${encodeURIComponent('[Feature Request]: ')}&body=${encodeURIComponent(`### Is your feature request related to a problem?
-A clear and concise description of what the problem is.
-
-### Describe the Solution
-A clear and concise description of what you want to happen.
-
-### Describe Alternatives
-A clear and concise description of any alternative solutions or features you've considered.
-
-### Additional Context
-Add any other context or screenshots about the feature request here.
-`)}&labels=enhancement`;
+  const FEATURE_REQUEST_URL = 'https://github.com/bakiun/threads-unfollowers/issues/new?title=' + encodeURIComponent('[Feature Request]: ') + '&body=' + encodeURIComponent(FEATURE_BODY) + '&labels=enhancement';
 
 
   const DEV = false;
@@ -381,8 +359,8 @@ Add any other context or screenshots about the feature request here.
           </div>
           <div class="iu-status-details-row">
             <span class="iu-status-details">${statusDetails()}</span>
-            ${showStopButton() ? `<button type="button" class="iu-status-btn-stop" data-action="stop-process">Stop</button>` : ''}
-            ${showReloadButton() ? `<button type="button" class="iu-status-btn-reload" data-action="rescan" aria-label="Rescan" title="Rescan">${SVG.reload}</button>` : ''}
+            ${showStopButton() ? '<button type="button" class="iu-status-btn-stop" data-action="stop-process">Stop</button>' : ''}
+            ${showReloadButton() ? '<button type="button" class="iu-status-btn-reload" data-action="rescan" aria-label="Rescan" title="Rescan">' + SVG.reload + '</button>' : ''}
           </div>
         </div>
 
@@ -1297,9 +1275,7 @@ Add any other context or screenshots about the feature request here.
             </div>
           </div>
           <div class="iu-header-actions">
-            ${state.mode !== 'settings' && state.mode !== 'scanning' && state.mode !== 'unfollowing' ? `
-              <button type="button" data-action="settings" aria-label="Settings" title="Settings">${SVG.gear}</button>
-            ` : ''}
+            ${state.mode !== 'settings' && state.mode !== 'scanning' && state.mode !== 'unfollowing' ? '<button type="button" data-action="settings" aria-label="Settings" title="Settings">' + SVG.gear + '</button>' : ''}
           </div>
         </header>
         <div class="iu-body" data-body></div>
