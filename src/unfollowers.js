@@ -12,6 +12,37 @@
   const STYLE_ID = 'tu-style';
   const STORAGE_KEY = 'tu_state_v1';
 
+  const BUG_REPORT_URL = `https://github.com/bakiun/threads-unfollowers/issues/new?title=${encodeURIComponent('[Bug]: ')}&body=${encodeURIComponent(`### Describe the Bug
+A clear and concise description of what the bug is.
+
+### Steps to Reproduce
+1. Go to Threads.com
+2. Run the script in the console
+3. [Describe actions taken]
+4. [Describe the error/behavior]
+
+### Expected Behavior
+[What you expected to happen]
+
+### Environment Details
+- Browser:
+- OS:
+`)}&labels=bug`;
+
+  const FEATURE_REQUEST_URL = `https://github.com/bakiun/threads-unfollowers/issues/new?title=${encodeURIComponent('[Feature Request]: ')}&body=${encodeURIComponent(`### Is your feature request related to a problem?
+A clear and concise description of what the problem is.
+
+### Describe the Solution
+A clear and concise description of what you want to happen.
+
+### Describe Alternatives
+A clear and concise description of any alternative solutions or features you've considered.
+
+### Additional Context
+Add any other context or screenshots about the feature request here.
+`)}&labels=enhancement`;
+
+
   const DEV = false;
   function log(...args) {
     if (DEV) {
@@ -1272,6 +1303,10 @@
           </div>
         </header>
         <div class="iu-body" data-body></div>
+        <footer class="iu-footer">
+          <a href="${BUG_REPORT_URL}" target="_blank" rel="noopener noreferrer">report a bug</a>
+          <a href="${FEATURE_REQUEST_URL}" target="_blank" rel="noopener noreferrer">request feature</a>
+        </footer>
       </section>
     `;
     bindHeader(root);
@@ -2231,6 +2266,30 @@
     #${APP_ID} .iu-panel.iu-panel--fullscreen .iu-row-text {
       flex: 1;
       min-width: 0;
+    }
+
+    #${APP_ID} .iu-footer {
+      flex-shrink: 0;
+      display: flex;
+      gap: 16px;
+      padding: 5px 16px;
+      border-top: 1px solid var(--iu-line);
+      background: rgba(10, 10, 10, 0.2);
+      justify-content: flex-start;
+      align-items: center;
+      user-select: none;
+    }
+    #${APP_ID} .iu-footer a {
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--iu-muted);
+      opacity: 0.6;
+      text-transform: lowercase;
+      transition: opacity 0.15s ease, color 0.15s ease;
+    }
+    #${APP_ID} .iu-footer a:hover {
+      opacity: 1;
+      color: var(--iu-primary-dim);
     }
 
     @media (max-width: 480px) {
