@@ -22,7 +22,7 @@ Works on [threads.com](https://www.threads.com) in any desktop browser — Chrom
 Press `F12` (or `Cmd + Option + J` on macOS / `Ctrl + Shift + J` on Windows/Linux), or right-click anywhere on the page and choose **Inspect**, then open the **Console** tab.
 
 ### 3. Paste the script and press Enter
-Copy the minified script from [the website](https://bakiun.github.io/threads-unfollowers), paste it into your browser console on Threads, and press Enter. A sleek interactive control panel will open on your page.
+Copy the minified script from [the website](https://bakiun.github.io/threads), paste it into your browser console on Threads, and press Enter. A sleek interactive control panel will open on your page.
 
 ![Welcome Screen](docs/assets/scan-now.png)
 
