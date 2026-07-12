@@ -1,5 +1,5 @@
 {
-  "name": "threads-unfollowers",
+  "name": "threads",
   "version": "1.0.0",
   "description": "Find users who unfollowed you on Threads.",
   "scripts": {
@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bakiun/threads-unfollowers.git"
+    "url": "git+https://github.com/bakiun/threads.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/bakiun/threads-unfollowers/issues"
+    "url": "https://github.com/bakiun/threads/issues"
   },
-  "homepage": "https://github.com/bakiun/threads-unfollowers#readme"
+  "homepage": "https://github.com/bakiun/threads#readme"
 }

@@ -9,7 +9,7 @@ A free browser console script that scans your Threads following list and shows y
 ## 🚀 Get the Script
 
 To get the latest version of the script and run it, please visit the official page:
-👉 **[bakiun.github.io/threads-unfollowers](https://bakiun.github.io/threads-unfollowers)**
+👉 **[bakiun.github.io/threads](https://bakiun.github.io/threads)**
 
 ---
 

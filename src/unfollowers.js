@@ -16,9 +16,9 @@
 
   const FEATURE_BODY = '### Is your feature request related to a problem?\nA clear and concise description of what the problem is.\n\n### Describe the Solution\nA clear and concise description of what you want to happen.\n\n### Describe Alternatives\nA clear and concise description of any alternative solutions or features you\'ve considered.\n\n### Additional Context\nAdd any other context or screenshots about the feature request here.';
 
-  const BUG_REPORT_URL = 'https://github.com/bakiun/threads-unfollowers/issues/new?title=' + encodeURIComponent('[Bug]: ') + '&body=' + encodeURIComponent(BUG_BODY) + '&labels=bug';
+  const BUG_REPORT_URL = 'https://github.com/bakiun/threads/issues/new?title=' + encodeURIComponent('[Bug]: ') + '&body=' + encodeURIComponent(BUG_BODY) + '&labels=bug';
 
-  const FEATURE_REQUEST_URL = 'https://github.com/bakiun/threads-unfollowers/issues/new?title=' + encodeURIComponent('[Feature Request]: ') + '&body=' + encodeURIComponent(FEATURE_BODY) + '&labels=enhancement';
+  const FEATURE_REQUEST_URL = 'https://github.com/bakiun/threads/issues/new?title=' + encodeURIComponent('[Feature Request]: ') + '&body=' + encodeURIComponent(FEATURE_BODY) + '&labels=enhancement';
 
 
   const DEV = false;
