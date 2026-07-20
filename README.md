@@ -4,6 +4,10 @@ See exactly who on Threads doesn't follow you back.
 
 A free browser console script that scans your Threads following list and shows you exactly who doesn't follow you back. No login, no extension, no data leaves your browser.
 
+### No Register No Login
+
+You don't need to register or login. Everything happens in your browser.
+
 ---
 
 ## 🚀 Get the Script
